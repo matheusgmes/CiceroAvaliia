@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">>
+
+
+    <Button
+            android:text="LOGAR"
+            android:layout_width="306dp"
+            android:layout_height="71dp"
+            android:id="@+id/button1" android:textSize="20sp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="52dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.977"
+            android:layout_marginTop="480dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+            android:text="CADASTRAR"
+            android:layout_width="154dp"
+            android:layout_height="0dp"
+            android:id="@+id/button2"
+            android:layout_marginBottom="38dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintTop_toBottomOf="@+id/tPass"/>
+    <TextView
+            android:text="CiceroAvalia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" android:textSize="64sp"
+            android:layout_marginTop="136dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="43dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"/>
+    <TextView
+            android:text="Senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp" app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginTop="148dp"/>
+    <TextView
+            android:text="Usuário"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp" app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginTop="56dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/tLog"
+            android:layout_marginTop="316dp" android:layout_marginBottom="60dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/tPass"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp" android:layout_marginEnd="24dp"
+    />
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/tPass"
+            app:layout_constraintTop_toBottomOf="@+id/tLog" android:layout_marginBottom="183dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+</android.support.constraint.ConstraintLayout>
