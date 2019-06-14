@@ -1,5 +1,6 @@
 package com.example.joanadobts.ciceroavalia
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -13,6 +14,14 @@ class Professores : DebugActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.professores)
+
+        var buttonOberdan = findViewById<Button>(R.id.button27)
+
+        buttonOberdan.setOnClickListener {
+
+            val nextIntent = Intent(this, Oberdan::class.java)
+            startActivity(nextIntent)
+        }
 
     }
 }

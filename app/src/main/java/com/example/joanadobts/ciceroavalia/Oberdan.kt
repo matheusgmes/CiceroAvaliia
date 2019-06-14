@@ -1,5 +1,6 @@
 package com.example.joanadobts.ciceroavalia
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -26,6 +27,14 @@ class Oberdan : DebugActivity() {
 
         adapter.setDropDownViewResource(android.R.layout. simple_spinner_dropdown_item)
         spinnerOberdan.adapter = adapter
+
+        var buttonVoltar = findViewById<Button>(R.id.button4)
+
+        buttonVoltar.setOnClickListener {
+
+            val nextIntent = Intent(this, Professores::class.java)
+            startActivity(nextIntent)
+        }
 
     }
 
